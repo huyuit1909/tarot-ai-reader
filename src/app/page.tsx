@@ -83,7 +83,7 @@ export default function Home() {
 
       const data = await response.json();
       setReading(data);
-    } catch (err) {
+    } catch {
       setError("Đã có lỗi xảy ra. Vui lòng thử lại.");
     } finally {
       setLoading(false);
@@ -217,7 +217,7 @@ export default function Home() {
 
                   <div className="bg-[#D4AF37]/10 border border-[#D4AF37]/30 p-4 rounded-lg mt-8 text-center italic">
                     <p className="text-[#D4AF37] font-serif text-lg">
-                      "<TypewriterText text={reading.affirmation} />"
+                      &quot;<TypewriterText text={reading.affirmation} />&quot;
                     </p>
                   </div>
                 </div>
