@@ -239,6 +239,11 @@ export default function Home() {
           )}
         </AnimatePresence>
       </motion.div>
+
+      {/* Footer */}
+      <div className="mt-16 pb-4 text-center w-full text-[#D4AF37]/50 text-xs font-serif tracking-widest uppercase">
+        Created by Gavin1909
+      </div>
     </main>
   );
 }
